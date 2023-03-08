@@ -2,89 +2,104 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anon - eCommerce</title>
-    <!--
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anon - eCommerce</title>
+  <!--
     - favicon
   -->
-    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
-    <!-- link css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+  <!-- link css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <div class="overlay" data-overlay></div>
+  <div class="overlay" data-overlay></div>
 
-    <!--
-        - MODAL
-    -->
+  <!------------ MODAL ---------------->
+  <div class="modal" data-modal>
 
+    <div class="modal-close-overlay" data-modal-overlay></div>
 
-    <div class="modal" data-modal>
+    <div class="modal-content">
 
-        <div class="modal-close-overlay" data-modal-overlay></div>
-    
-        <div class="modal-content">
-    
-          <button class="modal-close-btn" data-modal-close>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-    
-          <div class="newsletter-img">
-            <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
-          </div>
-    
-          <div class="newsletter">
-    
-            <form action="#">
-    
-              <div class="newsletter-header">
-    
-                <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-    
-                <p class="newsletter-desc">
-                  Subscribe the <b>Anon</b> to get latest products and discount update.
-                </p>
-    
-              </div>
-    
-              <input type="email" name="email" class="email-field" placeholder="Email Address" required>
-    
-              <button type="submit" class="btn-newsletter">Subscribe</button>
-    
-            </form>
-    
-          </div>
-    
-        </div>
-    
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
       </div>
 
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>Anon</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
 
 
+  <!------------ NOTIFICATION TOAST ---------------->
+  <div class="notification-toast" data-toast>
 
-    <!--
-        - custom js link
-    -->
-    <script src="js/index.js"></script>
-    <!--
-    - ionicon link
-    -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+      <p class="toast-message">Someone in new just bought</p>
+
+      <p class="toast-title">Rose Gold Earrings</p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+    </div>
+
+  </div>
+
+
+  <!--- custom js link -->
+  <script src="js/index.js"></script>
+
+  <!--- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
